@@ -28,13 +28,18 @@
 <div id="cover" role="dialog" aria-label="Wedding invitation cover">
   <div class="cover-card">
     <svg class="float" width="150" height="56" viewBox="0 0 150 56" fill="none" aria-hidden="true"><path d="M8 46 C50 44 100 30 142 10" stroke="#7D8B6A" stroke-width="1.3"/><path d="M38 44 C33 34 38 26 48 25 C48 34 44 41 38 44Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M62 40 C66 30 74 26 82 28 C78 37 70 41 62 40Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M86 33 C82 23 87 15 97 14 C97 23 93 30 86 33Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M106 25 C110 16 118 13 126 15 C122 23 114 27 106 25Z" fill="#DCE3D2" stroke="#7D8B6A"/><circle cx="140" cy="9" r="3.2" fill="#8C2F45"/><circle cx="132" cy="6" r="2.4" fill="#B5707E"/><circle cx="20" cy="45" r="2.4" fill="#B5707E"/></svg>
-    <p class="verse">“I have found the one whom my soul loves.”</p>
+    <p class="verse">I found the one whom my soul loves.</p>
     <p class="label">Song of Solomon 3:4</p>
     <div class="monogram" data-field="monogram"></div>
     <p class="label" style="color:var(--green-deep)">Two lives · One covenant · In Christ</p>
     <h1><span data-field="groom"></span> &amp; <span data-field="bride"></span></h1>
     <button class="btn" id="openBtn">Tap to Open</button>
   </div>
+</div>
+
+<div id="scrollPrompt" role="status" aria-live="polite" aria-hidden="true">
+  <span>Scroll down</span>
+  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </div>
 
 <!-- ================= NAVIGATION ================= -->
@@ -56,18 +61,18 @@
     <h2 class="hero-name" data-field="groom"></h2>
     <span class="amp">&amp;</span>
     <h2 class="hero-name" data-field="bride"></h2>
-    <div class="hero-meta">
+   <!-- <div class="hero-meta">
       <span data-field="dayName"></span><span class="bar"></span>
       <span data-field="shortDate"></span><span class="bar"></span>
       <span data-field="city"></span>
-    </div>
+    </div> -->
   </div>
 </section>
 
 <!-- ================= VERSE ================= -->
 <section class="verse-band">
   <div class="wrap narrow reveal">
-    <p class="q">“This is the LORD’s doing; it is marvellous in our eyes.”</p>
+    <p class="q">This was the LORD’s doing; it is marvellous in our eyes.</p>
     <p class="label">Psalm 118:23</p>
   </div>
 </section>
@@ -80,7 +85,7 @@
 
     <p class="lead">Rejoicing in His faithfulness, we</p>
     <h2 class="inv-names"><span data-field="groom"></span><span class="and">&amp;</span><span data-field="bride"></span></h2>
-    <p class="inv-text">Together with our families,<br>invite you to celebrate with us<br>as we begin our forever.</p>
+    <p class="inv-text">together with our families,<br>invite you to celebrate with us<br>as we begin our forever.</p>
 
     <svg width="90" height="20" viewBox="0 0 90 20" fill="none" aria-hidden="true"><path d="M4 10 H86" stroke="#C99AA5"/><circle cx="45" cy="10" r="4" fill="#FFFFFF" stroke="#8C2F45"/></svg>
 
@@ -151,7 +156,7 @@
   <div class="wrap narrow reveal">
     <h2 class="script" style="margin:0;font-size:clamp(48px,6vw,64px)">Share Your Blessings</h2>
     <p>Your love and blessings mean so much to us. Please share your blessings and write a word of prayer for us as we begin this beautiful new chapter together.</p>
-    <a class="btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">Blessings &amp; Prayers</a>
+    <a class="btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">Write a Message</a>
   </div>
 </section>
 
@@ -159,7 +164,7 @@
 <footer>
   <div class="wrap narrow reveal">
     <svg width="150" height="56" viewBox="0 0 150 56" fill="none" aria-hidden="true"><path d="M8 46 C50 44 100 30 142 10" stroke="#7D8B6A" stroke-width="1.3"/><path d="M38 44 C33 34 38 26 48 25 C48 34 44 41 38 44Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M62 40 C66 30 74 26 82 28 C78 37 70 41 62 40Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M86 33 C82 23 87 15 97 14 C97 23 93 30 86 33Z" fill="#DCE3D2" stroke="#7D8B6A"/><path d="M106 25 C110 16 118 13 126 15 C122 23 114 27 106 25Z" fill="#DCE3D2" stroke="#7D8B6A"/><circle cx="140" cy="9" r="3.2" fill="#8C2F45"/><circle cx="132" cy="6" r="2.4" fill="#B5707E"/></svg>
-    <p class="q">“Therefore what God hath joined together, let not man put asunder.”</p>
+    <p class="q">Therefore what God has joined together, let not man separate.</p>
     <p class="label">Mark 10:9</p>
     <p class="script names"><span data-field="groom"></span> &amp; <span data-field="bride"></span></p>
     <p class="label" style="color:var(--green-deep)" data-field="shortDate"></p>
@@ -190,7 +195,7 @@ const WEDDING = {
   timeZone: "+05:30",           // India = +05:30
 
   ceremony: {
-    venue:   "KPL Gardens",
+    venue:   "Kondapavuluri Gardens",
     address: "Vijayawada Club Rd, Tadepalle, Andhra Pradesh",
     phone:   "+91 8142414353",
     mapLink: "https://maps.app.goo.gl/Qx7F8LjF2C4PEPLE7"                 // Paste a Google Maps link, or leave "" to search by venue name
@@ -206,7 +211,7 @@ const WEDDING = {
   },
 
   rsvpBy:       "26 December 2026",
-  rsvpWhatsApp: "918895868112", // WhatsApp number with country code, no + or spaces. Leave "" to use email.
+  rsvpWhatsApp: "918142414353", // WhatsApp number with country code, no + or spaces. Leave "" to use email.
   rsvpEmail:    "monica.aind92@gmail.com",
 
   music: "audio/great-is-thy-faithfulness.mp3" // Relative path; set to "" to disable music
@@ -274,7 +279,7 @@ setupVenue("ceremony");
 setupVenue("reception");
 
 /* RSVP button: WhatsApp if a number is given, otherwise email */
-const rsvpMsg = `Wishing you both a lifetime of love and happiness! My prayers and blessings are with you as you begin this beautiful new chapter together.`;
+const rsvpMsg = `Write your message`;
 document.getElementById("rsvpBtn").href = WEDDING.rsvpWhatsApp
   ? `https://wa.me/${WEDDING.rsvpWhatsApp}?text=${encodeURIComponent(rsvpMsg)}`
   : `mailto:${WEDDING.rsvpEmail}?subject=${encodeURIComponent("RSVP - Wedding")}&body=${encodeURIComponent(rsvpMsg)}`;
@@ -282,9 +287,12 @@ document.getElementById("rsvpBtn").href = WEDDING.rsvpWhatsApp
 
 /* ---------- Tap to open + music ---------- */
 const cover = document.getElementById("cover");
+//const music = document.getElementById("bgMusic");
+//const musicBtn = document.getElementById("musicBtn");
+const scrollPrompt = document.getElementById("scrollPrompt");
 const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
-const openBtn = document.getElementById("openBtn");
+//const openBtn = document.getElementById("openBtn");
 if (WEDDING.music) {
   music.src = WEDDING.music;
   musicBtn.classList.add("show", "paused");
@@ -297,13 +305,56 @@ function syncMusicButton() {
   musicBtn.title = playing ? "Pause background music" : "Play background music";
 }
 
-let invitationOpen = false;
-function openInvitation() {
-  if (invitationOpen) return;
-  invitationOpen = true;
+function pauseMusic() {
+  if (!music.paused) {
+    music.pause();
+    syncMusicButton();
+  }
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) pauseMusic();
+});
+window.addEventListener("pagehide", pauseMusic);
+// let invitationOpen = false;
+// function openInvitation() {
+//   if (invitationOpen) return;
+//   invitationOpen = true;
+//   cover.classList.add("hide");
+//   document.body.classList.remove("locked");
+//   document.body.classList.add("invitation-open");
+//   spawnPetals(28);
+//   if (WEDDING.music) {
+//     music.play().then(syncMusicButton).catch(error => {
+//       syncMusicButton();
+//       console.error("Background music could not start:", error);
+//     });
+//   }
+// }
+
+// openBtn.addEventListener("click", openInvitation);
+// openBtn.addEventListener("pointerdown", openInvitation);
+// cover.addEventListener("click", event => {
+//   if (event.target === cover) openInvitation();
+// });
+// document.addEventListener("keydown", event => {
+//   if (event.key === "Enter" || event.key === " ") {
+//     if (cover && !cover.classList.contains("hide")) openInvitation();
+//   }
+// });
+
+function dismissScrollPrompt() {
+  if (window.scrollY <= 8) return;
+  scrollPrompt.classList.add("dismissed");
+  scrollPrompt.setAttribute("aria-hidden", "true");
+  window.removeEventListener("scroll", dismissScrollPrompt);
+}
+document.getElementById("openBtn").addEventListener("click", () => {
   cover.classList.add("hide");
   document.body.classList.remove("locked");
   document.body.classList.add("invitation-open");
+  scrollPrompt.setAttribute("aria-hidden", "false");
+  window.addEventListener("scroll", dismissScrollPrompt, { passive: true });
   spawnPetals(28);
   if (WEDDING.music) {
     music.play().then(syncMusicButton).catch(error => {
@@ -311,18 +362,9 @@ function openInvitation() {
       console.error("Background music could not start:", error);
     });
   }
-}
+});
 
-openBtn.addEventListener("click", openInvitation);
-openBtn.addEventListener("pointerdown", openInvitation);
-cover.addEventListener("click", event => {
-  if (event.target === cover) openInvitation();
-});
-document.addEventListener("keydown", event => {
-  if (event.key === "Enter" || event.key === " ") {
-    if (cover && !cover.classList.contains("hide")) openInvitation();
-  }
-});
+
 musicBtn.addEventListener("click", () => {
   if (music.paused) {
     music.play().then(syncMusicButton).catch(error => {
